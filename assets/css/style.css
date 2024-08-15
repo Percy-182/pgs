@@ -1,0 +1,23 @@
+.carousel-caption {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo semitransparente para mejorar la legibilidad */
+}
+
+.carousel-caption h5 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  max-width: 80%;
+  margin: 0 auto 1.5rem;
+}
