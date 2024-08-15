@@ -7,8 +7,8 @@
       name="keywords"
       content="servicio técnico notebooks, reparación laptops, servicio técnico PC, reparación desktop, venta componentes computación, accesorios computación, compra artículos eléctricos industriales, venta artículos eléctricos industriales, creación páginas web, desarrollo web HTML, desarrollo web CSS, desarrollo web JavaScript, servicio dominio web, servicio hosting web, PGS Electric Ltda, pgselectric.cl, Puente Alto, Región Metropolitana, Chile"
     />
-
     <title>PGS Electric💻</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link
       rel="shortcut icon"
       href="./assets/icon/pgs_rayo.png"
@@ -29,7 +29,7 @@
         data-bs-theme="dark"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">PGS Electric</a>
+          <a class="navbar-brand" href="#">PGS Electric <img src="./assets/icon/pgs_Electric_logo_sf2.png" alt="pgs_Electric_logo_sf2" height="24px" width="24px"></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -42,14 +42,14 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Planes</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -69,9 +69,6 @@
                     <a class="dropdown-item" href="#">Something else here</a>
                   </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -121,24 +118,26 @@
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./assets/img/web_design_pgs.jpg"
-              class="d-block w-100"
-              height="900px"
-              alt="web_design_pgs"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Diseño Web</h5>
-              <p>
-                Ofrecemos soluciones eficientes y estéticas que garantizan una
-                experiencia de usuario fluida y atractiva. Si buscas una página
-                web rápida, segura y bien diseñada, nuestros expertos están
-                listos para ayudarte.
-              </p>
-              <button type="button" class="btn btn-info">Saber más</button>
-            </div>
-          </div>
+<div class="carousel-item active">
+  <img
+    src="./assets/img/web_design_pgs.jpg"
+    class="d-block w-100"
+    height="900px"
+    alt="web_design_pgs"
+  />
+  <div class="carousel-caption d-flex align-items-center justify-content-center">
+    <div class="text-center">
+      <h5 id="diseño_web">Diseño Web</h5>
+      <p id="diseño_web_parrafo">
+        Ofrecemos soluciones eficientes y estéticas que garantizan una
+        experiencia de usuario fluida y atractiva. Si buscas una página
+        web rápida, segura y bien diseñada, nuestros expertos están
+        listos para ayudarte.
+      </p>
+      <button type="button" class="btn btn-info">Saber más</button>
+    </div>
+  </div>
+</div>
           <div class="carousel-item">
             <img
               src="./assets/img/armado_pc_pgs.jpg"
@@ -147,12 +146,14 @@
               alt="armado_pc_pgs"
               style="object-fit: cover; object-position: center"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Armado de PC - Custom</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-              <button type="button" class="btn btn-info">Saber más</button>
+            <div class="carousel-caption d-flex align-items-center justify-content-center">
+              <div class="text-center">
+                <h5 id="armado_pc">Armado de PC - Custom</h5>
+                <p id="armado_pc_parrafo">
+                Nos especializamos en armar pedidos personalizados para desktops y notebooks, adaptándonos a tus necesidades específicas. Además, ofrecemos una amplia gama de componentes de PC de alta calidad, incluyendo procesadores, tarjetas gráficas, memoria RAM y más. Ya sea que necesites actualizar tu equipo actual o construir una nueva computadora desde cero, nuestros expertos están aquí para asesorarte y proporcionarte los mejores productos del mercado. Confía en nosotros para optimizar tu experiencia informática con componentes fiables y de alto rendimiento.
+                </p>
+                <button type="button" class="btn btn-info">Saber más</button>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
@@ -163,12 +164,14 @@
               alt="servicio_tecnico_pgs"
               style="object-fit: cover; object-position: center"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Armado de PC - Custom</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-              <button type="button" class="btn btn-info">Saber más</button>
+              <div class="carousel-caption d-flex align-items-center justify-content-center">
+                <div>
+                  <h5>Servicio Técnico de Computadoras</h5>
+                  <p>
+                Ofrecemos un servicio técnico especializado para desktops y notebooks, asegurando que tu equipo siempre funcione al máximo rendimiento. Realizamos mantenimientos completos, incluyendo limpieza interna, actualización de software y diagnóstico de hardware para detectar y solucionar cualquier problema antes de que se convierta en una avería grave. Nuestro objetivo es proporcionar un servicio rápido y eficiente para que puedas volver a usar tu computadora sin interrupciones.
+                  </p>
+                  <button type="button" class="btn btn-info">Saber más</button>
+                </div>
             </div>
           </div>
           <div class="carousel-item">
@@ -179,14 +182,20 @@
               alt="gabinete_pgs"
               style="object-fit: cover; object-position: center"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-             <a href="mailto:contacto@pgselectric.cl" class="btn btn-outline-info">
+              <div class="carousel-caption d-flex align-items-center justify-content-center">
+                <div>
+                  <h5>Soluciones Eléctricas</h5>
+                  <p>
+                Ofrecemos una amplia gama de productos y servicios en el área eléctrica industrial, cubriendo todas tus necesidades con los mejores estándares de calidad. Proporcionamos asesoría experta y precios competitivos, asegurando que encuentres las soluciones más adecuadas para tus proyectos. Trabajamos con las mejores marcas del mercado, garantizando productos de alta fiabilidad y rendimiento.
+
+Entre los productos que ofrecemos se incluyen, por ejemplo: gabinetes eléctricos, interruptores y disyuntores, variadores de frecuencia y transformadores.
+
+Ya sea que necesites gabinetes eléctricos, componentes específicos o cualquier otro producto del rubro, estamos aquí para ayudarte. Cotiza con nosotros y descubre cómo podemos mejorar tus instalaciones eléctricas industriales con soluciones integrales y personalizadas.
+                  </p>
+                  <a href="mailto:contacto@pgselectric.cl" class="btn btn-outline-info">
   Cotizar
-</a>
+                  </a>
+                </div>
             </div>
           </div>
         </div>
@@ -214,11 +223,9 @@
       <br><hr class="my-5">
       <!--Lista de Planes-->
       <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-        <h1 class="display-4 fw-normal text-body-emphasis">Pricing</h1>
+        <h1 class="display-4 fw-normal text-body-emphasis">Planes</h1>
         <p class="fs-5 text-body-secondary">
-          Quickly build an effective pricing table for your potential customers
-          with this Bootstrap example. It’s built with default Bootstrap
-          components and utilities with little customization.
+          Diseño web sencillo y efectivo. Con nuestros planes de diseño web estático, podrás tener una página web funcional y visualmente atractiva sin la necesidad de conocimientos técnicos. Nos encargamos de todo el proceso de diseño y desarrollo para que tú solo tengas que preocuparte por tu contenido.
         </p>
       </div>
       <div class="container">
@@ -226,23 +233,23 @@
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Mensual</h4>
+              <h4 class="my-0 fw-normal">Básico</h4>
             </div>
             <div class="card-body">
               <h1 class="card-title pricing-card-title">
                 $100.000.-<small class="text-body-secondary fw-light">/pesos</small>
               </h1>
               <ul class="list-unstyled mt-3 mb-4">
-                <li>Incluye 1 año de dominio gratis</li>
-                <li>2 GB of storage</li>
-                <li>Email support</li>
-                <li>Help center access</li>
+                <li>1 año de dominio Gratis</li>
+                <li>Hosting Anual, con espacio suficiente para un sitio web pequeño.</li>
+                <li>Diseño simple y adaptable a dispositivos móviles.</li>
+                <li>SEO: Optimización básica de las principales páginas.</li>
               </ul>
               <button
                 type="button"
                 class="w-100 btn btn-lg btn-outline-primary"
               >
-                Sign up for free
+                !Quiero Contratar¡
               </button>
             </div>
           </div>
@@ -250,20 +257,20 @@
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Anual</h4>
+              <h4 class="my-0 fw-normal">Estándar</h4>
             </div>
             <div class="card-body">
               <h1 class="card-title pricing-card-title">
-                $15<small class="text-body-secondary fw-light">/mo</small>
+                $120.000.<small class="text-body-secondary fw-light">/pesos</small>
               </h1>
               <ul class="list-unstyled mt-3 mb-4">
-                <li>20 users included</li>
-                <li>10 GB of storage</li>
-                <li>Priority email support</li>
-                <li>Help center access</li>
+                <li>Hosting Anual, con mayor espacio para un sitio web más completo.</li>
+                <li>Diseño personalizado con más opciones de personalización.</li>
+                <li>Optimización de palabras clave relevantes para tu negocio.</li>
+                <li>Optimización de palabras clave relevantes para tu negocio.</li>
               </ul>
               <button type="button" class="w-100 btn btn-lg btn-primary">
-                Get started
+                !Quiero Contratar¡
               </button>
             </div>
           </div>
@@ -271,11 +278,11 @@
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm border-primary">
             <div class="card-header py-3 text-bg-primary border-primary">
-              <h4 class="my-0 fw-normal">2 años</h4>
+              <h4 class="my-0 fw-normal">Premium</h4>
             </div>
             <div class="card-body">
               <h1 class="card-title pricing-card-title">
-                $29<small class="text-body-secondary fw-light">/mo</small>
+                $200.000.<small class="text-body-secondary fw-light">/pesos</small>
               </h1>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>30 users included</li>
@@ -298,7 +305,7 @@
   <div class="row">
     <!-- Columna del mapa -->
     <div class="col-md-6 mb-4 mb-md-0">
-      <h3>Nuestra ubicación</h3>
+      <h3>Nuestra Ubicación</h3>
       <div class="ratio ratio-4x3">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.8834067821394!2d-70.56582532430357!3d-33.58237637333751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d7612ec84721%3A0x47a80e68265a1959!2sPGS%20Electric%20Ltda.!5e0!3m2!1ses!2scl!4v1721254540497!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
