@@ -1,13 +1,10 @@
 @media (max-width: 1120px) {
-
   .quote_btn-container a {
     display: none;
   }
 }
 
 @media (max-width: 992px) {
-
-
   .slider_section .slider-container {
     flex-direction: column;
     padding: 0;
@@ -110,10 +107,8 @@
 }
 
 @media (max-width: 576px) {
-
   .slider_section .carousel-control-prev,
   .slider_section .carousel-control-next {
-
     left: 41.6%;
   }
 
@@ -123,7 +118,6 @@
 }
 
 @media (max-width: 480px) {
-
   .slider_section .carousel-control-prev,
   .slider_section .carousel-control-next {
     left: 39%;
@@ -144,10 +138,10 @@
   }
 }
 
-@media (max-width: 420px) {}
+@media (max-width: 420px) {
+}
 
 @media (max-width: 360px) {
-
   .slider_section .carousel-control-prev,
   .slider_section .carousel-control-next {
     left: 36%;
@@ -162,3 +156,4 @@
   .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
     padding: 10px 30px;
   }
+}

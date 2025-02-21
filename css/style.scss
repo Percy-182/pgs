@@ -328,12 +328,12 @@ a:focus {
 
 .service_section {
   position: relative;
-
   @include secondary-font();
+  background-color: #f0f0f0; // Cambiar el color de fondo
 
   h2,
   p {
-    color: white;
+    color: #000; // Cambiar el color de la fuente a negro
   }
 
   hr {
@@ -389,10 +389,13 @@ a:focus {
     content: "";
     position: absolute;
     width: 100%;
-    height: 55%;
+    height: 100%;
     top: 0;
     left: 0;
-    background-image: url(../images/service-bg.jpg);
+    background-image: url(../images/service-bg.jpg); // Ruta de la imagen de fondo
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; // Opacidad para que se note la imagen de fondo
     z-index: -1;
   }
 
@@ -404,6 +407,30 @@ a:focus {
       @include hero_btn($black, $white, 8px, 25px, 25px);
     }
   }
+}
+
+.service-detail {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+  color: #000; // Cambiar el color de la fuente a negro
+}
+
+.service-detail button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff0000;
+  color: #000000;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
 }
 
 // end service section
