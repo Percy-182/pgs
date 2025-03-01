@@ -369,7 +369,7 @@ a:focus {
 
       h6 {
         text-transform: uppercase;
-        color: $black;
+        color: $black !important; // Forzar el color a negro
         font-weight: bold;
       }
     }
@@ -382,6 +382,12 @@ a:focus {
       .img-2 {
         display: inline-block;
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .box .name h6 {
+      color: $black !important; // Forzar el color a negro en dispositivos móviles
     }
   }
 
