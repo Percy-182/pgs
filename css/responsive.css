@@ -104,6 +104,31 @@
   .contact_section .contact_form-container input {
     width: 100%;
   }
+
+  .header_section {
+    padding: 15px 0; /* Reducir padding */
+  }
+
+  .slider_section .detail-box {
+    text-align: center; /* Centrar texto */
+  }
+
+  .service_section .box {
+    flex-direction: column; /* Alinear elementos verticalmente */
+  }
+
+  .portfolio_section .img-box {
+    width: 100%; /* Asegurar que las imágenes ocupen todo el ancho */
+  }
+
+  .contact_section .contact_items {
+    flex-direction: column; /* Alinear elementos verticalmente */
+    align-items: center;
+  }
+
+  .contact_section .contact_items .item {
+    margin-bottom: 15px; /* Espaciado entre elementos */
+  }
 }
 
 @media (max-width: 576px) {

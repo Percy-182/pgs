@@ -14,8 +14,11 @@
       name="keywords"
       content="servicio técnico notebooks, reparación laptops, servicio técnico PC, reparación desktop, venta componentes computación, accesorios computación, compra artículos eléctricos industriales, venta artículos eléctricos industriales, creación páginas web, desarrollo web HTML, desarrollo web CSS, desarrollo web JavaScript, servicio dominio web, servicio hosting web, PGS Electric Ltda, pgselectric.cl, Puente Alto, Región Metropolitana, Chile"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta
+      name="description"
+      content="PGS Electric Ltda: Servicio técnico especializado en notebooks, PCs y venta de componentes de computación. Expertos en soluciones eléctricas industriales, desarrollo web y hosting en Puente Alto, Chile. ¡Confía en profesionales!"
+    />
+    <meta name="author" content="PGS Electric Ltda" />
 
     <title>PGS Electric</title>
 
@@ -97,15 +100,24 @@
                 </ul>
               </div>
               <div class="quote_btn-container d-flex justify-content-center">
-                <a href="">
-                  <img src="images/call.png" alt="" />
-                  LLAMA : +01 1234567890
+                <a href="tel:+021234567890" class="clickable">
+                  <img src="images/call.png" alt="Llamar" />
+                  <span></span>
                 </a>
-                <a href="">
-                  <span> @ </span>
-                  contacto@pgselectric.cl
+                <a href="mailto:contacto@pgselectric.cl" class="clickable">
+                  <img src="images/envelope.png" ; alt="Correo" />
+                  <span>contacto@pgselectric.cl</span>
                 </a>
               </div>
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  const email = "contacto" + "@" + "pgselectric.cl";
+                  const emailLink = document.getElementById("email-link");
+                  const emailText = document.getElementById("email-text");
+                  emailText.textContent = email;
+                  emailLink.href = "mailto:" + email;
+                });
+              </script>
             </div>
           </nav>
         </div>
@@ -132,7 +144,7 @@
             >
               <span class="sr-only">Siguiente</span>
             </a>
-            <h1 class="large-text">PGS Electric</h1>
+            <h1 class="large-text">PGS Electric Ltda</h1>
             <p>
               <strong class="large-text">Su Vision - Nuestra Solucion</strong>
             </p>
@@ -184,7 +196,7 @@
             <div class="detail-box">
               <h6>Acerca de</h6>
               <div class="custom_heading-container">
-                <h2>PGS Electric</h2>
+                <h2>PGS Electric Ltda</h2>
                 <hr />
               </div>
               <p>
@@ -217,10 +229,7 @@
             <hr />
             <h2>Servicios</h2>
           </div>
-          <p>
-            Existen muchas variaciones de pasajes de Lorem Ipsum disponibles,
-            pero la mayoría
-          </p>
+          <p>a</p>
         </div>
       </div>
       <div class="container">
@@ -331,10 +340,7 @@
           <h2>Portafolio</h2>
           <hr />
         </div>
-        <p>
-          Existen muchas variaciones de pasajes de Lorem Ipsum disponibles, pero
-          la mayoría
-        </p>
+        <p></p>
         <div class="layout_padding2-top">
           <div class="row">
             <div class="col-md-4">
@@ -399,10 +405,7 @@
             <hr />
             <h2>Últimas Noticias</h2>
           </div>
-          <p>
-            Existen muchas variaciones de pasajes de Lorem Ipsum disponibles,
-            pero la mayoría
-          </p>
+          <p></p>
         </div>
         <div class="row">
           <div class="col-md-4">
@@ -425,11 +428,7 @@
               </div>
               <div class="detail-box">
                 <h4>PGS Computing buen diseño</h4>
-                <p>
-                  Es un hecho establecido desde hace mucho tiempo que un lector
-                  se distraerá con el contenido legible de una página al
-                  observar su diseño. El motivo de usar Lorem
-                </p>
+                <p>Es</p>
                 <div>
                   <a href=""> Leer Más </a>
                 </div>
@@ -456,11 +455,7 @@
               </div>
               <div class="detail-box">
                 <h4>PGS Computing buen diseño</h4>
-                <p>
-                  Es un hecho establecido desde hace mucho tiempo que un lector
-                  se distraerá con el contenido legible de una página al
-                  observar su diseño. El motivo de usar Lorem
-                </p>
+                <p>Es</p>
                 <div>
                   <a href=""> Leer Más </a>
                 </div>
@@ -487,11 +482,7 @@
               </div>
               <div class="detail-box">
                 <h4>PGS Computing buen diseño</h4>
-                <p>
-                  Es un hecho establecido desde hace mucho tiempo que un lector
-                  se distraerá con el contenido legible de una página al
-                  observar su diseño. El motivo de usar Lorem
-                </p>
+                <p>a</p>
                 <div>
                   <a href=""> Leer Más </a>
                 </div>
@@ -531,8 +522,41 @@
           <h2>Lo que dicen nuestros clientes</h2>
           <hr />
         </div>
-        <div class="client_container layout_padding-top" id="reviews-container">
-          <!-- Las reseñas de Google se insertarán aquí -->
+        <div class="client_container layout_padding-top">
+          <div class="box">
+            <div class="client-id">
+              <div class="img-box">
+                <img src="images/client.png" alt="Cliente 1" />
+              </div>
+              <div class="name">
+                <h5>Solo queria serpopular</h5>
+                <h6></h6>
+              </div>
+            </div>
+            <div class="detail-box">
+              <p>
+                "Muy buena atención, me demostró en detalle todo lo que se le
+                hiso a mi pc dentro de lo mas barato por el sector"
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="client-id">
+              <div class="img-box">
+                <img src="images/client.png" alt="Cliente 2" />
+              </div>
+              <div class="name">
+                <h5>Claudio Sanhueza</h5>
+                <h6></h6>
+              </div>
+            </div>
+            <div class="detail-box">
+              <p>
+                "Excelente servicio el año pasado me armó un pc gamer, nada que
+                decir, muy bueno ;) "
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -596,15 +620,15 @@
           </div>
         </div>
         <div class="contact_items">
-          <a href="">
+          <a href="tel:+021234567890" class="clickable">
             <div class="item">
               <div class="img-box box-2"></div>
               <div class="detail-box">
-                <p>+02 1234567890</p>
+                <p></p>
               </div>
             </div>
           </a>
-          <a href="">
+          <a href="mailto:contacto@pgselectric.cl" class="clickable">
             <div class="item">
               <div class="img-box box-3"></div>
               <div class="detail-box">
@@ -616,7 +640,7 @@
             <div class="item">
               <div class="img-box box-1"></div>
               <div class="detail-box">
-                <p>se distraerá por lo legible</p>
+                <p>Puente Alto, Región Metropolitana, Chile</p>
               </div>
             </div>
           </a>
@@ -626,11 +650,11 @@
     <!-- fin de la sección de Contacto -->
 
     <!-- sección de Información -->
-    <section class="info_section layout_padding">
+    <!-- <section class="info_section layout_padding">
       <div class="container">
         <div class="info_social">
           <div>
-            <a href="https://www.facebook.com/pgselectricltda">
+            <a href="https://www.facebook.com/pgscomputing/">
               <img src="images/fb.png" alt="" />
             </a>
           </div>
@@ -645,7 +669,7 @@
             </a>
           </div>
           <div>
-            <a href="https://www.instagram.com/pgs_electric_ltda/">
+            <a href="https://www.instagram.com/pgs_computing/">
               <img src="images/insta.png" alt="" />
             </a>
           </div>
@@ -658,15 +682,31 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- fin de la sección de Información -->
 
     <!-- sección de Pie de página -->
     <section class="container-fluid footer_section">
-      <p>
-        &copy; 2025 Todos los Derechos Reservados por
-        <a href="https://pgselectric.cl/">PGS Computing</a>
-      </p>
+      <div class="footer-left">
+        <p>PGS Electric Ltda &copy; 2025 Todos los Derechos Reservados</p>
+      </div>
+      <div class="footer-center social-icons">
+        <a href="https://www.facebook.com/pgscomputing/" target="_blank">
+          <img src="images/fb.png" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="images/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="images/insta.png" alt="Instagram" />
+        </a>
+      </div>
+      <div class="footer-right">
+        <p>
+          Diseñado por
+          <a href="https://pgselectric.cl/computing">PGS Computing <3</a>
+        </p>
+      </div>
     </section>
     <!-- sección de Pie de página -->
 
