@@ -950,7 +950,7 @@ a:focus {
 }
 
 .clickable:hover {
-  color: #007bff; /* Cambiar color al pasar el cursor */
+  color: #007afd; /* Cambiar color al pasar el cursor */
 }
 
 .clickable img {
@@ -1039,6 +1039,6 @@ a {
 
 button:hover,
 a:hover {
-  background-color: #0000cc; /* Color de hover consistente */
+  background-color: #0000cc00; /* Color de hover consistente */
   color: #ffffff; /* Texto blanco en hover */
 }
