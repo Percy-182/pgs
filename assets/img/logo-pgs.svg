@@ -1,0 +1,6 @@
+<!-- Logo ficticio PGS Electric SVG, reemplazar por el original cuando esté disponible -->
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="24" cy="24" r="22" fill="#084DA6" stroke="#38BDF2" stroke-width="3"/>
+  <text x="50%" y="54%" text-anchor="middle" fill="#fff" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="bold" dy=".3em">PGS</text>
+  <rect x="10" y="36" width="28" height="5" rx="2.5" fill="#38BDF2"/>
+</svg>

@@ -1,760 +1,796 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <!-- Básico -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Metas para móviles -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- Metas del sitio -->
-    <meta
-      name="keywords"
-      content="servicio técnico notebooks, reparación laptops, servicio técnico PC, reparación desktop, venta componentes computación, accesorios computación, compra artículos eléctricos industriales, venta artículos eléctricos industriales, creación páginas web, desarrollo web HTML, desarrollo web CSS, desarrollo web JavaScript, servicio dominio web, servicio hosting web, PGS Electric Ltda, pgselectric.cl, Puente Alto, Región Metropolitana, Chile"
-    />
-    <meta
-      name="description"
-      content="PGS Electric Ltda: Servicio técnico especializado en notebooks, PCs y venta de componentes de computación. Expertos en soluciones eléctricas industriales, desarrollo web y hosting en Puente Alto, Chile. ¡Confía en profesionales!"
-    />
-    <meta name="author" content="PGS Electric Ltda" />
-
-    <title>PGS Electric</title>
-
-    <link rel="icon" type="image/x-icon" href="/images/pgs_sinfondo.png" />
-
-    <!-- hoja de estilos para el slider -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PGS Electric | Componentes Eléctricos Industriales</title>
     <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"
-    />
-
-    <!-- hoja de estilos principal de bootstrap -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-    <!-- estilos de fuentes -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <!-- Estilos personalizados para esta plantilla -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- estilos responsivos -->
-    <link href="css/responsive.css" rel="stylesheet" />
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6382323650912471"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&family=Fira+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Favicon con logo de la empresa -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo-pgs.svg" />
   </head>
-
   <body>
-    <div class="hero_area">
-      <!-- sección de encabezado comienza -->
-      <header class="header_section">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand" href="index.html">
-              <img src="images/logo.png" alt="" />
-              <span> PGS Electric </span>
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Alternar navegación"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5491123456789" class="whatsapp-btn" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div
-                class="d-flex mx-auto flex-column flex-lg-row align-items-center"
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <!-- Logo empresa en navbar -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img
+            src="assets/img/logo-pgs.svg"
+            alt="Logo PGS Electric"
+            class="logo-navbar"
+            height="38"
+          />
+          <span>PGS<span style="color: var(--accent)"> Electric</span></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#productos">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section con división diagonal y dos bloques -->
+    <section class="hero hero-diagonal" id="inicio">
+      <div class="hero-diagonal-wrapper">
+        <div class="hero-block hero-block-electric">
+          <div class="hero-block-content">
+            <h1 class="display-5 fw-bold mb-3">Eléctrica Industrial</h1>
+            <p class="lead mb-4">
+              Más de 30 años brindando componentes eléctricos industriales:
+              gabinetes, cables y accesorios para gabinetes.<br />
+              <span class="d-none d-md-inline"
+                >Calidad, seguridad y experiencia para tu empresa.</span
               >
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html"
-                      >Inicio <span class="sr-only">(actual)</span></a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">Acerca de</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="service.html">Servicios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portafolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="news.html">Noticias</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contáctanos</a>
-                  </li>
+            </p>
+            <a href="#contacto" class="btn btn-primary btn-lg"
+              >Solicitar Cotización</a
+            >
+          </div>
+        </div>
+        <div class="hero-block hero-block-it">
+          <div class="hero-block-content">
+            <h1
+              class="display-5 fw-bold mb-3"
+              style="font-family: 'Fira Mono', monospace; color: #025159"
+            >
+              IT Empresarial
+            </h1>
+            <p class="lead mb-4" style="color: #025159">
+              Soluciones en redes, servidores, ciberseguridad y soporte IT.<br />
+              <span class="d-none d-md-inline"
+                >Infraestructura tecnológica para la industria moderna.</span
+              >
+            </p>
+            <a href="#servicios" class="btn btn-it btn-lg">Ver Servicios IT</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section bg-light" id="productos">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title">Productos</h2>
+            <p class="text-muted">
+              Componentes eléctricos industriales de alta calidad para todo tipo
+              de proyectos.
+            </p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="service-card p-4 text-center">
+              <div class="service-icon">
+                <i class="fas fa-box"></i>
+              </div>
+              <h4>Gabinetes Eléctricos</h4>
+              <p>
+                Gabinetes metálicos y plásticos para instalaciones industriales,
+                con variedad de tamaños y certificaciones.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card p-4 text-center">
+              <div class="service-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h4>Cables Industriales</h4>
+              <p>
+                Cables eléctricos de potencia, control y señal, resistentes y
+                certificados para ambientes exigentes.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card p-4 text-center">
+              <div class="service-icon">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <h4>Accesorios para Gabinetes</h4>
+              <p>
+                Cerraduras, bisagras, ventiladores, placas, rieles DIN y todo lo
+                necesario para el armado de gabinetes eléctricos.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card p-4 text-center">
+              <div class="service-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h4>Instrumentos de Medición</h4>
+              <p>
+                Multímetros, amperímetros, medidores de energía y otros
+                instrumentos para el control eléctrico industrial.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card p-4 text-center">
+              <div class="service-icon">
+                <i class="fas fa-plug"></i>
+              </div>
+              <h4>Conectores y Bornes</h4>
+              <p>
+                Bornes, conectores, terminales y accesorios para cableado seguro
+                y eficiente.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card p-4 text-center">
+              <div class="service-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h4>Protección y Seguridad</h4>
+              <p>
+                Fusibles, interruptores, disyuntores y sistemas de protección
+                eléctrica para instalaciones industriales.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title">Servicios</h2>
+            <p class="text-muted">
+              Soluciones integrales en electricidad industrial y servicios IT
+              para empresas.
+            </p>
+          </div>
+        </div>
+        <div class="row g-4 align-items-stretch">
+          <div class="col-md-6 d-flex">
+            <div
+              class="service-card-electric p-4 w-100 d-flex flex-column justify-content-between shadow-sm"
+            >
+              <div>
+                <div class="d-flex align-items-center mb-3">
+                  <i
+                    class="fas fa-industry fa-2x me-3"
+                    style="color: var(--primary)"
+                  ></i>
+                  <h4
+                    class="mb-0"
+                    style="
+                      font-family: 'Montserrat', sans-serif;
+                      color: var(--primary);
+                    "
+                  >
+                    Servicios Eléctricos Industriales
+                  </h4>
+                </div>
+                <ul class="mb-4 ps-3">
+                  <li>Asesoría y diseño de tableros eléctricos</li>
+                  <li>Montaje y mantenimiento de instalaciones industriales</li>
+                  <li>Automatización y control</li>
+                  <li>Certificación y seguridad eléctrica</li>
                 </ul>
               </div>
-              <div class="quote_btn-container d-flex justify-content-center">
-                <a href="tel:+021234567890" class="clickable">
-                  <img src="images/call.png" alt="Llamar" />
-                  <span></span>
-                </a>
-                <a href="mailto:contacto@pgselectric.cl" class="clickable">
-                  <img src="images/envelope.png" alt="Correo" />
-                  <span>contacto@pgselectric.cl</span>
-                </a>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <!-- fin de la sección de encabezado -->
-      <!-- sección del slider -->
-      <section class="slider_section position-relative">
-        <div class="slider_bg-container"></div>
-        <div class="slider-container">
-          <div class="detail-box">
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="prev"
-            >
-              <span class="sr-only">Anterior</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="next"
-            >
-              <span class="sr-only">Siguiente</span>
-            </a>
-            <h1 class="large-text">PGS Electric Ltda</h1>
-            <p>
-              <strong class="large-text">Su Vision - Nuestra Solucion</strong>
-            </p>
-            <div>
-              <a href="mailto:percygarcia@pgselectric.cl" class="slider-link">
-                CONTÁCTANOS
-              </a>
+              <a href="#" class="btn btn-primary mt-auto align-self-start"
+                >Ver más</a
+              >
             </div>
           </div>
-          <div class="img-box">
+          <div class="col-md-6 d-flex">
             <div
-              id="carouselExampleControls"
-              class="carousel slide"
-              data-ride="carousel"
+              class="service-card-it p-4 w-100 d-flex flex-column justify-content-between shadow-sm"
             >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="images/pgs_Electric_.jpg"
-                    alt=""
-                    class="d-block w-100 carousel-img"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/pgs_Electric_Tablero_Electrico.jpg"
-                    alt=""
-                    class="d-block w-100 carousel-img"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/pgs_Electric_Variador_Frecuencia.jpg"
-                    alt=""
-                    class="d-block w-100 carousel-img"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- fin de la sección del slider -->
-    </div>
-
-    <!-- sección Acerca de -->
-    <section class="about_section layout_padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="detail-box">
-              <h6>Acerca de</h6>
-              <div class="custom_heading-container">
-                <h2>PGS Electric Ltda</h2>
-                <hr />
-              </div>
-              <p>
-                Con una amplia gama de servicios, PGS Electric puede satisfacer
-                todas sus necesidades. Colaboramos con nuestros clientes para
-                crear planes personalizados que se integren a la perfección con
-                sus operaciones y permitan una colaboración a futuro.
-                Contáctenos para ver cómo nuestros servicios pueden ayudarle.
-              </p>
               <div>
-                <a href="index.html"> Leer Más </a>
+                <div class="d-flex align-items-center mb-3">
+                  <i
+                    class="fas fa-network-wired fa-2x me-3"
+                    style="color: #025159"
+                  ></i>
+                  <h4
+                    class="mb-0"
+                    style="
+                      font-family: 'Fira Mono', monospace;
+                      color: #025159;
+                      letter-spacing: 0.5px;
+                    "
+                  >
+                    Servicios IT Empresariales
+                  </h4>
+                </div>
+                <ul class="mb-4 ps-3">
+                  <li>Infraestructura de redes y cableado estructurado</li>
+                  <li>Implementación de servidores y virtualización</li>
+                  <li>Soluciones de ciberseguridad</li>
+                  <li>Soporte técnico y consultoría IT</li>
+                </ul>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="img-box">
-              <img src="images/about-img.png" alt="" />
+              <a
+                href="./index2.html"
+                class="btn btn-it mt-auto align-self-start"
+                target="_blank"
+                >Ver más</a
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- fin de la sección Acerca de -->
 
-    <!-- sección de Servicios -->
-    <section class="service_section layout_padding">
+    <!-- About Section -->
+    <section class="section bg-light" id="nosotros">
       <div class="container">
-        <div class="d-flex flex-column align-items-end">
-          <div class="custom_heading-container">
-            <hr />
-            <h2>Servicios</h2>
-          </div>
-          <div class="h3">
-            Soluciones Integradas para Tu Mundo Eléctrico y Digital
-          </div>
-          <p>
-            En PGS Electric y PGS Computing, resolvemos desafíos técnicos y
-            tecnológicos con un portafolio único de servicios. Desde la
-            instalación de gabinetes eléctricos industriales y venta de
-            componentes certificados hasta el armado de equipos computacionales,
-            desarrollo de páginas web y estrategias de marketing digital,
-            garantizamos eficiencia y calidad. Nuestro objetivo es simple:
-            potenciar tu operación, ya sea en el ámbito energético, eléctrico o
-            digital, con soluciones adaptadas a empresas y particulares enPuente
-            Alto y todo Chile.
-          </p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="service_container layout_padding2">
-          <a href="javascript:void(0)" onclick="showServiceDetail('web')">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/s-1.png" alt="" class="img-1" />
-                <img src="images/s1-blue.png" alt="" class="img-2" />
-              </div>
-              <div class="name">
-                <h6>web</h6>
-              </div>
-            </div>
-          </a>
-          <a
-            href="javascript:void(0)"
-            onclick="showServiceDetail('disenoGrafico')"
-          >
-            <div class="box">
-              <div class="img-box">
-                <img src="images/s-2.png" alt="" class="img-1" />
-                <img src="images/s2-blue.png" alt="" class="img-2" />
-              </div>
-              <div class="name">
-                <h6>Diseño Gráfico</h6>
-              </div>
-            </div>
-          </a>
-          <a href="">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/s-3.png" alt="" class="img-1" />
-                <img src="images/s3-blue.png" alt="" class="img-2" />
-              </div>
-              <div class="name">
-                <h6>Diseño Vectorial</h6>
-              </div>
-            </div>
-          </a>
-          <a href="">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/s-4.png" alt="" class="img-1" />
-                <img src="images/s4-blue.png" alt="" class="img-2" />
-              </div>
-              <div class="name">
-                <h6>Dibujo</h6>
-              </div>
-            </div>
-          </a>
-          <a href="">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/s-5.png" alt="" class="img-1" />
-                <img src="images/s5-blue.png" alt="" class="img-2" />
-              </div>
-              <div class="name">
-                <h6>Nube</h6>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div
-        id="service-detail"
-        class="service-detail"
-        style="
-          display: none;
-          background-color: rgba(255, 255, 255, 0.9);
-          padding: 20px;
-          border-radius: 10px;
-          position: relative;
-          max-width: 90%;
-          margin: 0 auto;
-        "
-      >
-        <h3 id="service-title"></h3>
-        <p id="service-description"></p>
-        <button
-          onclick="hideServiceDetail()"
-          style="
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: #ff0000;
-            color: #ffffff;
-            border: none;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            font-size: 16px;
-          "
-        >
-          &times;
-        </button>
-      </div>
-      <div class="read-btn">
-        <a href="service.html"> Leer Más </a>
-      </div>
-    </section>
-    <!-- fin de la sección de Servicios -->
-    <br />
-    <!-- sección de Portafolio -->
-    <section class="portfolio_section">
-      <div class="container">
-        <div class="custom_heading-container">
-          <h2>Portafolio</h2>
-          <hr />
-        </div>
-        <p></p>
-        <div class="layout_padding2-top">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="img-box">
-                <img src="images/p-1.jpg" alt="" />
-                <a href="">
-                  <img src="images/link.png" alt="" />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="img-box">
-                <img src="images/p-2.jpg" alt="" />
-                <a href="">
-                  <img src="images/link.png" alt="" />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="img-box">
-                <img src="images/p-3.jpg" alt="" />
-                <a href="">
-                  <img src="images/link.png" alt="" />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="img-box">
-                <img src="images/p-4.jpg" alt="" />
-                <a href="">
-                  <img src="images/link.png" alt="" />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="img-box">
-                <img src="images/p-5.jpg" alt="" />
-                <a href="">
-                  <img src="images/link.png" alt="" />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="img-box">
-                <img src="images/p-6.jpg" alt="" />
-                <a href="">
-                  <img src="images/link.png" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- fin de la sección de Portafolio -->
-
-    <!-- sección de Noticias -->
-    <section class="news_section layout_padding">
-      <div class="container">
-        <div class="d-flex flex-column align-items-end">
-          <div class="custom_heading-container">
-            <hr />
-            <h2>Últimas Noticias</h2>
-          </div>
-          <p></p>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/n-1.jpg" alt="" />
-              </div>
-              <div class="action-box">
-                <div class="action">
-                  <a href="">
-                    <img src="images/like.png" alt="" />
-                  </a>
-                  <a href="">
-                    <img src="images/comment.png" alt="" />
-                  </a>
-                  <a href="">
-                    <img src="images/share.png" alt="" />
-                  </a>
-                </div>
-              </div>
-              <div class="detail-box">
-                <h4>PGS Computing buen diseño</h4>
-                <p>Es</p>
-                <div>
-                  <a href=""> Leer Más </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/n-2.jpg" alt="" />
-              </div>
-              <div class="action-box">
-                <div class="action">
-                  <a href="">
-                    <img src="images/like.png" alt="" />
-                  </a>
-                  <a href="">
-                    <img src="images/comment.png" alt="" />
-                  </a>
-                  <a href="">
-                    <img src="images/share.png" alt="" />
-                  </a>
-                </div>
-              </div>
-              <div class="detail-box">
-                <h4>PGS Computing buen diseño</h4>
-                <p>Es</p>
-                <div>
-                  <a href=""> Leer Más </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/n-3.png" alt="" />
-              </div>
-              <div class="action-box">
-                <div class="action">
-                  <a href="">
-                    <img src="images/like.png" alt="" />
-                  </a>
-                  <a href="">
-                    <img src="images/comment.png" alt="" />
-                  </a>
-                  <a href="">
-                    <img src="images/share.png" alt="" />
-                  </a>
-                </div>
-              </div>
-              <div class="detail-box">
-                <h4>PGS Computing buen diseño</h4>
-                <p>a</p>
-                <div>
-                  <a href=""> Leer Más </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- fin de la sección de Noticias -->
-
-    <!-- sección de Suscripción -->
-    <!-- <section class="subscribe_section layout_padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h2>
-              Suscríbete a nuestro <br />
-              <span> Boletín </span>
-            </h2>
-          </div>
-          <div class="col-md-8">
-            <form action="">
-              <input type="text" placeholder="Ingresa tu correo electrónico" />
-              <button>Suscribirse</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- fin de la sección de Suscripción -->
-
-    <!-- sección de Clientes -->
-    <section class="client_section layout_padding">
-      <div class="container">
-        <div class="custom_heading-container">
-          <h2>Lo que dicen nuestros clientes</h2>
-          <hr />
-        </div>
-        <div class="client_container layout_padding-top">
-          <div class="box">
-            <div class="client-id">
-              <div class="img-box">
-                <img
-                  src="https://api.dicebear.com/8.x/pixel-art/svg?seed=${Math.random()}"
-                  alt="Avatar aleatorio"
-                />
-              </div>
-              <div class="name">
-                <h5>Solo queria serpopular</h5>
-                <h6></h6>
-              </div>
-            </div>
-            <div class="detail-box">
-              <p>
-                "Muy buena atención, me demostró en detalle todo lo que se le
-                hiso a mi pc dentro de lo mas barato por el sector"
-              </p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="client-id">
-              <div class="img-box">
-                <img
-                  src="https://api.dicebear.com/8.x/identicon/svg?seed=${Math.random()}"
-                  alt="Cliente 2"
-                />
-              </div>
-              <div class="name">
-                <h5>Claudio Sanhueza</h5>
-                <h6></h6>
-              </div>
-            </div>
-            <div class="detail-box">
-              <p>
-                "Excelente servicio el año pasado me armó un pc gamer, nada que
-                decir, muy bueno ;) "
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- fin de la sección de Clientes -->
-
-    <!-- sección de Contacto -->
-    <section class="contact_section layout_padding-bottom">
-      <div class="container">
-        <div class="d-flex flex-column align-items-end">
-          <div class="custom_heading-container">
-            <hr />
-            <h2>Contáctanos</h2>
-          </div>
-        </div>
-        <div class="layout_padding-top layout_padding2-bottom">
-          <div class="row">
-            <div class="col-md-7">
-              <form action="">
-                <div class="contact_form-container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h2 class="section-title text-start">Sobre Nosotros</h2>
+            <p class="mb-4">
+              En <strong>PGS Electric</strong> somos líderes en el rubro
+              eléctrico industrial desde hace más de <strong>30 años</strong>.
+              Nos dedicamos a la venta de componentes eléctricos de alta
+              calidad, brindando soluciones confiables para la industria
+              nacional.
+            </p>
+            <p>
+              Ofrecemos gabinetes eléctricos, cables, accesorios y sistemas de
+              protección, trabajando con las mejores marcas y cumpliendo los más
+              altos estándares de seguridad y certificación.
+            </p>
+            <div class="row mt-4">
+              <div class="col-md-6 mb-3">
+                <div class="d-flex">
+                  <div class="me-3">
+                    <i class="fas fa-user-tie text-success fa-2x"></i>
+                  </div>
                   <div>
-                    <div>
-                      <input type="text" placeholder="Nombre" />
-                    </div>
-                    <div>
-                      <input type="email" placeholder="Correo Electrónico" />
-                    </div>
-                    <div>
-                      <input type="text" placeholder="Número de Teléfono" />
-                    </div>
-                    <div class="">
-                      <input
-                        type="text"
-                        placeholder="Mensaje"
-                        class="message_input"
-                      />
-                    </div>
-                    <div class="mt-5">
-                      <button type="submit">Enviar</button>
+                    <h5>Experiencia Comprobada</h5>
+                    <p class="mb-0">
+                      Más de 30 años en el sector eléctrico industrial
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="d-flex">
+                  <div class="me-3">
+                    <i class="fas fa-award text-success fa-2x"></i>
+                  </div>
+                  <div>
+                    <h5>Calidad Garantizada</h5>
+                    <p class="mb-0">Productos certificados y marcas líderes</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="d-flex">
+                  <div class="me-3">
+                    <i class="fas fa-shield-alt text-success fa-2x"></i>
+                  </div>
+                  <div>
+                    <h5>Seguridad Industrial</h5>
+                    <p class="mb-0">Soluciones seguras para tu empresa</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="d-flex">
+                  <div class="me-3">
+                    <i class="fas fa-truck text-success fa-2x"></i>
+                  </div>
+                  <div>
+                    <h5>Entrega Rápida</h5>
+                    <p class="mb-0">Stock permanente y logística eficiente</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <!-- Imagen y logo empresa en Sobre Nosotros -->
+            <div
+              class="p-4 bg-white rounded shadow-sm h-100 d-flex flex-column justify-content-between"
+            >
+              <div class="position-relative">
+                <!-- Imagen principal Sobre Nosotros -->
+                <div
+                  class="ratio ratio-16x9 flex-shrink-1"
+                  style="
+                    min-width: 340px;
+                    max-width: 540px;
+                    aspect-ratio: 16/8;
+                    margin: 0 auto;
+                  "
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
+                    alt="Equipo de trabajo industrial"
+                    class="rounded img-fluid"
+                  />
+                  <!-- Logo empresa en esquina superior derecha sobre la imagen -->
+                  <img
+                    src="assets/img/logo-pgs.svg"
+                    alt="Logo PGS Electric"
+                    class="logo-nosotros-overlay"
+                  />
+                </div>
+              </div>
+              <div class="mt-4">
+                <h4>Nuestro Compromiso</h4>
+                <p>
+                  En PGS Electric cada cliente es único. Ofrecemos asesoramiento
+                  personalizado y soluciones adaptadas a las necesidades de cada
+                  proyecto industrial.
+                </p>
+                <p>
+                  Trabajamos con responsabilidad, puntualidad y transparencia,
+                  asegurando la satisfacción total de nuestros clientes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title">Solicite su Cotización</h2>
+            <p class="text-muted">
+              Complete el formulario y nuestro equipo lo asesorará en su
+              proyecto eléctrico industrial
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="form-container">
+              <form id="cotizacionForm">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="nombre" class="form-label"
+                      >Nombre completo <span style="color: red">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombre"
+                      name="nombre"
+                      required
+                      placeholder="Ej: Tony Stark"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label"
+                      >Correo electrónico
+                      <span style="color: red">*</span></label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                      placeholder="Ej: usuario@empresa.com"
+                    />
+                    <div class="invalid-feedback">
+                      Ingrese un correo electrónico válido.
                     </div>
                   </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="telefono" class="form-label"
+                      >Teléfono <span style="color: red">*</span></label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="telefono"
+                      name="telefono"
+                      required
+                      pattern="^[0-9\s\-\+\(\)]{8,20}$"
+                      placeholder="Ej: +56 9 12345678"
+                    />
+                    <div class="invalid-feedback" id="telefono-error">
+                      El teléfono solo puede contener números y símbolos (+ - (
+                      )). No se permiten letras.
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="producto" class="form-label"
+                      >Producto de interés
+                      <span style="color: red">*</span></label
+                    >
+                    <select
+                      class="form-select form-control"
+                      id="producto"
+                      name="producto"
+                      required
+                    >
+                      <option value="" selected disabled>
+                        Seleccione una opción
+                      </option>
+                      <option>Asesoramiento</option>
+                      <option>Gabinetes Eléctricos</option>
+                      <option>Cables Industriales</option>
+                      <option>Accesorios para Gabinetes</option>
+                      <option>Instrumentos de Medición</option>
+                      <option>Conectores y Bornes</option>
+                      <option>Protección y Seguridad</option>
+                      <option>Otro</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Seleccione un producto de interés.
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label"
+                    >Describa su proyecto o necesidades
+                    <span style="color: red">*</span></label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary">
+                    Enviar Solicitud
+                  </button>
                 </div>
               </form>
             </div>
-            <div class="col-md-5">
-              <div class="map-box">
-                <div id="map">
-                  <div class="map-responsive">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.8834067821394!2d-70.56582532430357!3d-33.58237637333751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d7612ec84721%3A0x47a80e68265a1959!2sPGS%20Electric%20Ltda.!5e0!3m2!1ses!2scl!4v1739829711090!5m2!1ses!2scl"
-                      width="600"
-                      height="450"
-                      style="border: 0"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                  </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands Carousel Section -->
+    <section class="section bg-light marcas-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title">Marcas que Representamos</h2>
+            <h5
+              class="text-primary fw-semibold mb-2"
+              style="letter-spacing: 0.5px"
+            >
+              Confianza y calidad en cada proyecto
+            </h5>
+            <p class="text-muted mb-0" style="max-width: 600px; margin: auto">
+              Trabajamos con los principales fabricantes del sector eléctrico
+              industrial, garantizando productos certificados y soporte técnico
+              especializado para cada necesidad de tu empresa.
+            </p>
+          </div>
+        </div>
+        <div id="brandsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner align-items-center">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center gap-5 flex-wrap">
+                <div class="brand-logo-effect">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png"
+                    alt="Marca 1"
+                    class="brand-img"
+                  />
+                </div>
+                <div class="brand-logo-effect">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png"
+                    alt="Marca 2"
+                    class="brand-img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center gap-5 flex-wrap">
+                <div class="brand-logo-effect">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png"
+                    alt="Marca 3"
+                    class="brand-img"
+                  />
+                </div>
+                <div class="brand-logo-effect">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png"
+                    alt="Marca 4"
+                    class="brand-img"
+                  />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="contact_items">
-          <a
-            href="tel:+"
-            class="clickable"
-            rel="noopener noreferrer"
-            title="Llamar a PGS Electric Ltda"
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#brandsCarousel"
+            data-bs-slide="prev"
           >
-            <div class="item">
-              <div class="img-box box-2"></div>
-              <div class="detail-box">
-                <p></p>
-              </div>
-            </div>
-          </a>
-          <a
-            href="mailto:contacto@pgselectric.cl"
-            class="clickable"
-            rel="noopener noreferrer"
-            title="Enviar correo electrónico a PGS Electric Ltda"
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#brandsCarousel"
+            data-bs-slide="next"
           >
-            <div class="item">
-              <div class="img-box box-3"></div>
-              <div class="detail-box">
-                <p>contacto@pgselectric.cl</p>
-              </div>
-            </div>
-          </a>
-          <a href="">
-            <div class="item">
-              <div class="img-box box-1"></div>
-              <div class="detail-box">
-                <p>Puente Alto, Región Metropolitana, Chile</p>
-              </div>
-            </div>
-          </a>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
       </div>
     </section>
-    <!-- fin de la sección de Contacto -->
 
-    <!-- sección de Información -->
-    <!-- <section class="info_section layout_padding">
+    <!-- Footer -->
+    <footer>
       <div class="container">
-        <div class="info_social">
-          <div>
-            <a href="https://www.facebook.com/pgscomputing/">
-              <img src="images/fb.png" alt="" />
-            </a>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <!-- Footer con logo empresa -->
+            <h4 class="footer-title d-flex align-items-center gap-2">
+              PGS Electric
+              <img
+                src="assets/img/logo-pgs.svg"
+                alt="Logo PGS Electric"
+                class="logo-footer"
+                height="32"
+              />
+            </h4>
+            <p>
+              Especialistas en componentes eléctricos industriales. Más de 30
+              años de experiencia brindando calidad y seguridad a la industria
+              nacional.
+            </p>
+            <div class="social-links mt-4">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
           </div>
-          <div>
-            <a href="">
-              <img src="images/twitter.png" alt="" />
-            </a>
+          <div class="col-lg-2 col-md-6">
+            <h4 class="footer-title">Enlaces</h4>
+            <div class="footer-links">
+              <a href="#inicio">Inicio</a>
+              <a href="#servicios">Productos</a>
+              <a href="#trabajos">Proyectos</a>
+              <a href="#nosotros">Nosotros</a>
+              <a href="#contacto">Contacto</a>
+            </div>
           </div>
-          <div>
-            <a href="">
-              <img src="images/linkedin.png" alt="" />
-            </a>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="footer-title">Productos</h4>
+            <div class="footer-links">
+              <a href="#">Gabinetes Eléctricos</a>
+              <a href="#">Cables Industriales</a>
+              <a href="#">Accesorios para Gabinetes</a>
+              <a href="#">Instrumentos de Medición</a>
+              <a href="#">Conectores y Bornes</a>
+              <a href="#">Protección y Seguridad</a>
+            </div>
           </div>
-          <div>
-            <a href="https://www.instagram.com/pgs_computing/">
-              <img src="images/insta.png" alt="" />
-            </a>
+          <div class="col-lg-3">
+            <h4 class="footer-title">Contacto</h4>
+            <div class="footer-contact">
+              <p class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i> Av. Principal 123,
+                Ciudad
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-phone-alt me-2"></i> (123) 456-7890
+              </p>
+              <p class="mb-2">
+                <i class="fas fa-envelope me-2"></i> info@pgselectric.com
+              </p>
+              <p class="mb-0">
+                <i class="fab fa-whatsapp me-2"></i> +54 9 11 2345-6789
+              </p>
+            </div>
           </div>
         </div>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          </p>
+        <div class="row copyright">
+          <div class="col-12 text-center">
+            <p class="mb-0">
+              &copy; 2025 PGS Electric. Todos los derechos reservados.
+            </p>
+          </div>
         </div>
       </div>
-    </section> -->
-    <!-- fin de la sección de Información -->
+    </footer>
 
-    <!-- sección de Pie de página -->
-    <section class="container-fluid footer_section">
-      <div class="footer-left">
-        <p>PGS Electric Ltda &copy; 2025 Todos los Derechos Reservados</p>
-      </div>
-      <div class="footer-center social-icons">
-        <a href="https://www.facebook.com/pgscomputing/" target="_blank">
-          <img src="images/fb.png" alt="Facebook" />
-        </a>
-        <a href="https://twitter.com" target="_blank">
-          <img src="images/linkedin.png" alt="LinkedIn" />
-        </a>
-        <a href="https://instagram.com" target="_blank">
-          <img src="images/insta.png" alt="Instagram" />
-        </a>
-      </div>
-      <div class="footer-right">
-        <p>
-          Diseñado por
-          <a href="https://pgselectric.cl/computing">PGS Computing <3</a>
-        </p>
-      </div>
-    </section>
-    <!-- sección de Pie de página -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+      // Validación personalizada para el formulario de cotización
+      document.addEventListener("DOMContentLoaded", function () {
+        var form = document.getElementById("cotizacionForm");
+        var telefono = document.getElementById("telefono");
+        var telefonoError = document.getElementById("telefono-error");
 
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript">
-      function showServiceDetail(service) {
-        var title, description;
-        if (service === "web") {
-          title = "Servicio Web";
-          description =
-            "Nuestro servicio web se distingue por un compromiso inquebrantable con la excelencia y la personalización. Nos enfocamos en comprender en profundidad las necesidades y objetivos únicos de cada cliente, para ofrecer soluciones digitales a medida que integran las mejores prácticas en usabilidad, seguridad y escalabilidad. Nuestro equipo de profesionales altamente calificados trabaja de la mano con usted en cada etapa del proyecto, desde la planificación y diseño hasta el desarrollo e implementación, asegurando resultados de alta calidad que potencian su presencia en línea. Con metodologías ágiles y un enfoque centrado en la innovación, transformamos sus ideas en soluciones concretas que no solo cumplen, sino que superan las expectativas, generando un impacto positivo y sostenible en su negocio.";
-        } else if (service === "disenoGrafico") {
-          title = "Diseño Gráfico";
-          description = "Descripción detallada del diseño gráfico...";
+        // Evitar ingreso de letras en el campo teléfono en tiempo real
+        telefono.addEventListener("input", function (e) {
+          var original = telefono.value;
+          // Solo permite números, espacios y símbolos permitidos
+          var filtrado = original.replace(/[^0-9\s\-\+\(\)]/g, "");
+          if (original !== filtrado) {
+            telefono.value = filtrado;
+            telefono.classList.add("is-invalid");
+            telefonoError.textContent =
+              "Solo se permiten números y símbolos (+ - ( )). No se permiten letras.";
+          } else {
+            // Si el campo está vacío, no mostrar error
+            if (telefono.value.length === 0) {
+              telefono.classList.remove("is-invalid");
+              telefonoError.textContent =
+                "Solo se permiten números y símbolos (+ - ( )). No se permiten letras.";
+            }
+          }
+        });
+
+        form.addEventListener("submit", function (event) {
+          // Bootstrap validation
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          // Validación extra para email y teléfono
+          var email = document.getElementById("email");
+          var producto = document.getElementById("producto");
+          // Email simple regex
+          var emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value);
+          if (!emailValido) {
+            email.classList.add("is-invalid");
+            event.preventDefault();
+            event.stopPropagation();
+          } else {
+            email.classList.remove("is-invalid");
+          }
+          // Teléfono: al menos 8 dígitos, solo números y símbolos comunes
+          var telValido = /^[0-9\s\-\+\(\)]{8,20}$/.test(telefono.value);
+          if (!telValido) {
+            telefono.classList.add("is-invalid");
+            telefonoError.textContent =
+              "Ingrese un número de teléfono válido (mínimo 8 caracteres, solo números y símbolos).";
+            event.preventDefault();
+            event.stopPropagation();
+          } else {
+            telefono.classList.remove("is-invalid");
+            telefonoError.textContent =
+              "Solo se permiten números y símbolos (+ - ( )). No se permiten letras.";
+          }
+          // Producto obligatorio
+          if (!producto.value) {
+            producto.classList.add("is-invalid");
+            event.preventDefault();
+            event.stopPropagation();
+          } else {
+            producto.classList.remove("is-invalid");
+          }
+          form.classList.add("was-validated");
+        });
+        // Quitar error al corregir
+        ["input", "change"].forEach(function (evt) {
+          form.addEventListener(
+            evt,
+            function (e) {
+              if (e.target.classList.contains("is-invalid")) {
+                e.target.classList.remove("is-invalid");
+              }
+            },
+            true
+          );
+        });
+      });
+
+      // Navbar scroll spy efecto activo
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = [
+          "inicio",
+          "productos",
+          "servicios",
+          "nosotros",
+          "contacto",
+        ];
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        function onScroll() {
+          let scrollPos = window.scrollY || window.pageYOffset;
+          let found = false;
+          sections.forEach((id, idx) => {
+            const section = document.getElementById(id);
+            if (section) {
+              const top = section.offsetTop - 80;
+              const bottom = top + section.offsetHeight;
+              if (scrollPos >= top && scrollPos < bottom) {
+                navLinks.forEach((l) => l.classList.remove("selected"));
+                navLinks[idx].classList.add("selected");
+                found = true;
+              }
+            }
+          });
+          if (!found) {
+            navLinks.forEach((l) => l.classList.remove("selected"));
+          }
         }
-        // Añadir más servicios según sea necesario
-        document.getElementById("service-title").innerText = title;
-        document.getElementById("service-description").innerText = description;
-        document.getElementById("service-detail").style.display = "block";
-      }
-
-      function hideServiceDetail() {
-        document.getElementById("service-detail").style.display = "none";
-      }
+        window.addEventListener("scroll", onScroll);
+        onScroll();
+      });
     </script>
-    <script src="js/script.js"></script>
+    <style>
+      /* Mover estos estilos a style.css para mantener el código limpio */
+    </style>
   </body>
 </html>
