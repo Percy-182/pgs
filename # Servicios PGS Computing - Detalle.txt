@@ -1,0 +1,39 @@
+# Servicios PGS Computing - Detalles Expandidos
+
+## 1. Desarrollo Web
+Ofrecemos soluciones web robustas y a la medida, adaptadas a las necesidades específicas de cada cliente.
+- **Páginas Web Estáticas:** Desarrollo con tecnologías puras para máxima velocidad y control. Ideal para sitios corporativos, portfolios y landing pages.
+  - *Tecnologías:* HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, Tailwind CSS.
+- **Páginas Web Dinámicas & eCommerce:** Plataformas gestionables y tiendas online con todas las funcionalidades.
+  - *Tecnologías:* WordPress (Personalización de temas y desarrollo de plugins), WooCommerce, PHP.
+- **Desarrollo a Medida:** Aplicaciones web y soluciones específicas con funcionalidades complejas.
+  - *Frameworks y Librerías:* React.js, Vue.js, Node.js.
+
+## 2. Soporte Técnico
+Servicio preventivo y correctivo para mantener su infraestructura tecnológica funcionando sin problemas.
+- **Soporte Remoto:** Atención inmediata para resolver problemas de software, configuración, virus y malware.
+- **Soporte Presencial (Santiago):* Mantenimiento, instalación de software, cambio de componentes (HDD, SSD, RAM), y reparación de equipos.
+- **Soporte Recurrente:** Planes de mantenimiento mensual para empresas que requieren atención prioritaria y constante.
+
+## 3. Consultoría IT
+Asesoría experta para guiar su transformación digital y resolver desafíos tecnológicos.
+- **Ciberseguridad:** Auditorías básicas de seguridad, planificación de backups, configuración de firewalls, y capacitación contra phishing.
+- **Optimización de Procesos:** Implementación y configuración de herramientas de productividad y gestión (CRMs, automatizaciones).
+- **Estrategia Digital:** Análisis de su infraestructura actual y planificación de una hoja de ruta tecnológica.
+
+## 4. Mantenimiento
+Mantenimiento proactivo para prevenir fallos y asegurar la continuidad operativa de su negocio.
+- **Mantenimiento de Hardware:** Limpieza física interna de equipos, actualización de componentes.
+- **Mantenimiento de Software:** Actualización de sistemas operativos, parches de seguridad, y optimización del rendimiento.
+
+## 5. Marketing Digital
+Potencie la presencia online de su marca y convierta su sitio web en una fuente de clientes.
+- **Gestión de Redes Sociales:**
+  - **Servicio Completo:** Creación de estrategia, diseño de contenido, publicación programada, community management y reportes de analytics.
+  - **Servicio Parcial (Solo Agente):** Atención profesional de mensajes y comentarios, cualificación de leads y derivación efectiva al área de ventas.
+- **SEO (Posicionamiento en Búsquedas):** Optimización técnica y de contenido para mejorar la visibilidad orgánica en Google.
+
+## 6. Venta de Hardware y Software
+Proveemos los componentes y licencias que su negocio necesita, sin necesidad de mantener stock.
+- **Hardware:** Venta de componentes (SSD, RAM, fuentes de poder, etc.) y armado de PCs personalizadas para el hogar, oficina, gaming o diseño.
+- **Software:** Asesoría en la selección y venta de licencias de software legal (Microsoft Office, Windows, antivirus, etc.).
