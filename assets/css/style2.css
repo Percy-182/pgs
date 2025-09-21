@@ -5,8 +5,48 @@
   --light-it: #eff9f9;
   --dark-it: #012e40;
   --gray-it: #5d8a94;
+  /* Mejor contraste para el icono hamburguesa en navbar-it */
+  .navbar-it .navbar-toggler-icon {
+    background-color: rgba(2, 81, 89, 0.93) !important;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(54, 191, 191, 0.13);
+    border: 1.5px solid #fff;
+    background-image: none !important;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+  }
+  .navbar-it .navbar-toggler-icon::before,
+  .navbar-it .navbar-toggler-icon::after,
+  .navbar-it .navbar-toggler-icon span {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0.4rem;
+    right: 0.4rem;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.2s;
+  }
+  .navbar-it .navbar-toggler-icon::before {
+    top: 0.5rem;
+  }
+  .navbar-it .navbar-toggler-icon::after {
+    bottom: 0.5rem;
+  }
+  .navbar-it .navbar-toggler-icon span {
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
+.navbar-it .navbar-toggler {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #333;
@@ -274,6 +314,40 @@ h6 {
     var(--secondary-it) 100%
   );
   color: white;
+  position: relative;
+  overflow: hidden;
+}
+.stats-section::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: -60px;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(
+    circle,
+    rgba(54, 191, 191, 0.18) 0%,
+    transparent 70%
+  );
+  z-index: 1;
+}
+.stats-section::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  right: -80px;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(
+    circle,
+    rgba(2, 81, 89, 0.13) 0%,
+    transparent 70%
+  );
+  z-index: 1;
+}
+.stats-section > .container {
+  position: relative;
+  z-index: 2;
 }
 
 .stat-card {

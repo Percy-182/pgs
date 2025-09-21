@@ -9,8 +9,48 @@
   align-items: stretch;
   position: relative;
   z-index: 1;
+  /* Mejor contraste para el icono hamburguesa en navbar */
+  .navbar-toggler-icon {
+    background-color: rgba(8, 77, 166, 0.92) !important;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(8, 77, 166, 0.13);
+    border: 1.5px solid #fff;
+    background-image: none !important;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+  }
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after,
+  .navbar-toggler-icon span {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0.4rem;
+    right: 0.4rem;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.2s;
+  }
+  .navbar-toggler-icon::before {
+    top: 0.5rem;
+  }
+  .navbar-toggler-icon::after {
+    bottom: 0.5rem;
+  }
+  .navbar-toggler-icon span {
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 .hero-diagonal-wrapper {
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+  }
   display: flex;
   width: 100%;
   min-height: 60vh;
@@ -26,7 +66,8 @@
   min-height: 320px;
   padding: 3.5rem 2rem 3.5rem 2rem;
   position: relative;
-  transition: flex-basis 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s, z-index 0.3s;
+  transition: flex-basis 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s,
+    z-index 0.3s;
   overflow: hidden;
   cursor: pointer;
 }
@@ -409,6 +450,7 @@ h6 {
 }
 
 .whatsapp-btn {
+  text-decoration: none;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -715,61 +757,58 @@ footer::before {
     margin-bottom: 0.7rem;
   }
 }
-  .hero h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .hero p {
-    text-align: center;
-  }
-
-  .section {
-    padding: 3rem 0;
-  }
-
-  .portfolio-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .portfolio-item img {
-    aspect-ratio: 16/10;
-  }
-
-  .testimonial-card {
-    margin: 1rem 0;
-  }
-
-  .navbar-brand {
-    font-size: 1.2rem;
-  }
-
-  .whatsapp-btn {
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-  }
+.hero h1 {
+  font-size: 2rem;
+  text-align: center;
 }
 
-  .client-info img {
-    width: 40px;
-    height: 40px;
-  }
+.hero p {
+  text-align: center;
+}
 
-  .footer-title {
-    margin-top: 1.5rem;
-  }
+.section {
+  padding: 3rem 0;
+}
 
-  .social-links {
-    text-align: center;
-  }
+.portfolio-grid {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
 
-  .footer-contact {
-    margin-top: 1rem;
-  }
+.portfolio-item img {
+  aspect-ratio: 16/10;
+}
+
+.testimonial-card {
+  margin: 1rem 0;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+}
+
+.whatsapp-btn {
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+}
+.client-info img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-title {
+  margin-top: 1.5rem;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.footer-contact {
+  margin-top: 1rem;
 }
 
 /* Sección de marcas/carousel con mayor presencia visual */
