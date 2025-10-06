@@ -1,5 +1,4 @@
 // Animación de conteo para estadísticas en la sección experiencia
-// Autor: GitHub Copilot
 
 function animateStats() {
   const stats = document.querySelectorAll(".stat-number");

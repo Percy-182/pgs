@@ -1,5 +1,4 @@
-// Lightbox y acordeón de servicios IT para index2.html
-// Autor: GitHub Copilot
+// Lightbox y acordeón de servicios IT para computing.html
 
 const serviciosData = [
   {
