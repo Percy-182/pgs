@@ -536,50 +536,57 @@
       document
         .getElementById("contactoForm")
         .addEventListener("submit", function (e) {
-          e.preventDefault(); // Importante: prevenimos el envío normal
+          e.preventDefault();
 
           const boton = document.getElementById("submitBtn");
           const formulario = this;
 
-          // Cambiar estado a "Enviando"
+          // 1️⃣ PRIMERA ETAPA: "Enviando..."
           boton.disabled = true;
-          boton.textContent = "Enviando...";
+          boton.textContent = "🔄 Enviando...";
           boton.style.opacity = "0.7";
 
-          // Enviar datos via Fetch API
+          // Enviar datos
           fetch("enviar.php", {
             method: "POST",
             body: new FormData(formulario),
           })
             .then((response) => response.text())
             .then((resultado) => {
-              // Cambiar a "Enviado correctamente"
-              boton.textContent = "✅ Enviado Correctamente";
-              boton.style.backgroundColor = "#28a745"; // Verde de éxito
+              // 2️⃣ SEGUNDA ETAPA: "Enviado" (éxito confirmado)
+              boton.textContent = "✅ Enviado";
+              boton.style.backgroundColor = "#28a745";
               boton.style.opacity = "1";
 
-              // Mostrar mensaje de éxito
-              document.getElementById("mensajeExito").style.display = "block";
+              // Mostrar tu tooltip de éxito (si lo tienes)
+              if (typeof mostrarTooltipExito === "function") {
+                mostrarTooltipExito();
+              }
 
-              // Opcional: limpiar el formulario después de 2 segundos
+              // Limpiar formulario después de 2 segundos
               setTimeout(() => {
                 formulario.reset();
-                // Restaurar botón después de 5 segundos (opcional)
-                setTimeout(() => {
-                  boton.disabled = false;
-                  boton.textContent = "Enviar Solicitud";
-                  boton.style.backgroundColor = ""; // Volver al color original
-                  document.getElementById("mensajeExito").style.display =
-                    "none";
-                }, 5000);
               }, 2000);
+
+              // 3️⃣ TERCERA ETAPA: Restaurar después de 3 segundos más
+              setTimeout(() => {
+                boton.disabled = false;
+                boton.textContent = "Enviar Solicitud";
+                boton.style.backgroundColor = ""; // Volver al color original
+              }, 5000); // Total: 2s + 3s = 5 segundos en estado "Enviado"
             })
             .catch((error) => {
-              // En caso de error
+              // Manejo de error
               console.error("Error:", error);
               boton.disabled = false;
-              boton.textContent = "Error - Intentar Nuevamente";
-              boton.style.backgroundColor = "#dc3545"; // Rojo de error
+              boton.textContent = "❌ Error - Reintentar";
+              boton.style.backgroundColor = "#dc3545";
+
+              // Restaurar después de 3 segundos en caso de error
+              setTimeout(() => {
+                boton.textContent = "Enviar Solicitud";
+                boton.style.backgroundColor = "";
+              }, 3000);
             });
         });
     </script>
