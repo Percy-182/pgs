@@ -533,21 +533,55 @@
     <script src="./assets/js/servicios-lightbox.js"></script>
     <script src="./assets/js/stats-anim.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const formulario = document.getElementById("contactoForm");
+      document
+        .getElementById("contactoForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // Importante: prevenimos el envío normal
 
-        formulario.addEventListener("submit", function (e) {
-          const boton = this.querySelector('button[type="submit"]');
+          const boton = document.getElementById("submitBtn");
+          const formulario = this;
 
-          // Deshabilitar el botón y cambiar texto
+          // Cambiar estado a "Enviando"
           boton.disabled = true;
           boton.textContent = "Enviando...";
-          boton.style.opacity = "0.7"; // Opcional: dar feedback visual
+          boton.style.opacity = "0.7";
 
-          // El formulario se enviará normalmente a enviar.php
-          // No necesitas preventDefault() a menos que uses AJAX
+          // Enviar datos via Fetch API
+          fetch("enviar.php", {
+            method: "POST",
+            body: new FormData(formulario),
+          })
+            .then((response) => response.text())
+            .then((resultado) => {
+              // Cambiar a "Enviado correctamente"
+              boton.textContent = "✅ Enviado Correctamente";
+              boton.style.backgroundColor = "#28a745"; // Verde de éxito
+              boton.style.opacity = "1";
+
+              // Mostrar mensaje de éxito
+              document.getElementById("mensajeExito").style.display = "block";
+
+              // Opcional: limpiar el formulario después de 2 segundos
+              setTimeout(() => {
+                formulario.reset();
+                // Restaurar botón después de 5 segundos (opcional)
+                setTimeout(() => {
+                  boton.disabled = false;
+                  boton.textContent = "Enviar Solicitud";
+                  boton.style.backgroundColor = ""; // Volver al color original
+                  document.getElementById("mensajeExito").style.display =
+                    "none";
+                }, 5000);
+              }, 2000);
+            })
+            .catch((error) => {
+              // En caso de error
+              console.error("Error:", error);
+              boton.disabled = false;
+              boton.textContent = "Error - Intentar Nuevamente";
+              boton.style.backgroundColor = "#dc3545"; // Rojo de error
+            });
         });
-      });
     </script>
   </body>
 </html>
