@@ -350,12 +350,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="contact-form">
-              <form
-                id="contactoForm"
-                action="mailto:computing@pgselectric.cl"
-                method="post"
-                enctype="text/plain"
-              >
+              <form id="contactoForm" action="enviar.php" method="POST">
                 <div class="row">
                   <div class="col-md-6 mb-3">
                     <label for="nombre" class="form-label"
@@ -537,5 +532,22 @@
     <script src="./assets/js/script2.js"></script>
     <script src="./assets/js/servicios-lightbox.js"></script>
     <script src="./assets/js/stats-anim.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const formulario = document.getElementById("contactoForm");
+
+        formulario.addEventListener("submit", function (e) {
+          const boton = this.querySelector('button[type="submit"]');
+
+          // Deshabilitar el botón y cambiar texto
+          boton.disabled = true;
+          boton.textContent = "Enviando...";
+          boton.style.opacity = "0.7"; // Opcional: dar feedback visual
+
+          // El formulario se enviará normalmente a enviar.php
+          // No necesitas preventDefault() a menos que uses AJAX
+        });
+      });
+    </script>
   </body>
 </html>
