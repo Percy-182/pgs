@@ -9,15 +9,15 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // Form submission
-document
-  .getElementById("contactoForm")
-  ?.addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert(
-      "¡Gracias por su solicitud! Nuestro equipo IT se pondrá en contacto con usted en las próximas 24 horas."
-    );
-    this.reset();
-  });
+// document
+//   .getElementById("contactoForm")
+//   ?.addEventListener("submit", function (e) {
+//     e.preventDefault();
+//     alert(
+//       "¡Gracias por su solicitud! Nuestro equipo IT se pondrá en contacto con usted en las próximas 24 horas."
+//     );
+//     this.reset();
+//   });
 
 // Navbar scroll effect
 window.addEventListener("scroll", function () {
