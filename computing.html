@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -541,63 +541,5 @@
     <script src="./assets/js/script2.js"></script>
     <script src="./assets/js/servicios-lightbox.js"></script>
     <script src="./assets/js/stats-anim.js"></script>
-    <!-- <script>
-      document
-        .getElementById("contactoForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          const boton = document.getElementById("submitBtn");
-          const formulario = this;
-
-          // 1️⃣ PRIMERA ETAPA: "Enviando..."
-          boton.disabled = true;
-          boton.textContent = "🔄 Enviando...";
-          boton.style.opacity = "0.7";
-
-          // Enviar datos
-          fetch("enviar.php", {
-            method: "POST",
-            body: new FormData(formulario),
-          })
-            .then((response) => response.text())
-            .then((resultado) => {
-              // 2️⃣ SEGUNDA ETAPA: "Enviado" (éxito confirmado)
-              boton.textContent = "✅ Enviado";
-              boton.style.backgroundColor = "#28a745";
-              boton.style.opacity = "1";
-
-              // Mostrar tu tooltip de éxito (si lo tienes)
-              if (typeof mostrarTooltipExito === "function") {
-                mostrarTooltipExito();
-              }
-
-              // Limpiar formulario después de 2 segundos
-              setTimeout(() => {
-                formulario.reset();
-              }, 2000);
-
-              // 3️⃣ TERCERA ETAPA: Restaurar después de 3 segundos más
-              setTimeout(() => {
-                boton.disabled = false;
-                boton.textContent = "Enviar Solicitud";
-                boton.style.backgroundColor = ""; // Volver al color original
-              }, 5000); // Total: 2s + 3s = 5 segundos en estado "Enviado"
-            })
-            .catch((error) => {
-              // Manejo de error
-              console.error("Error:", error);
-              boton.disabled = false;
-              boton.textContent = "❌ Error - Reintentar";
-              boton.style.backgroundColor = "#dc3545";
-
-              // Restaurar después de 3 segundos en caso de error
-              setTimeout(() => {
-                boton.textContent = "Enviar Solicitud";
-                boton.style.backgroundColor = "";
-              }, 3000);
-            });
-        });
-    </script> -->
   </body>
 </html>
