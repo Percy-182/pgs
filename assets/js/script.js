@@ -9,15 +9,15 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // Form submission
-document
-  .getElementById("cotizacionForm")
-  ?.addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert(
-      "¡Gracias por su solicitud! Nos pondremos en contacto a la brevedad."
-    );
-    this.reset();
-  });
+// document
+//   .getElementById("cotizacionForm")
+//   ?.addEventListener("submit", function (e) {
+//     e.preventDefault();
+//     alert(
+//       "¡Gracias por su solicitud! Nos pondremos en contacto a la brevedad."
+//     );
+//     this.reset();
+//   });
 
 // Navbar background change on scroll
 window.addEventListener("scroll", function () {
