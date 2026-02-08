@@ -92,6 +92,7 @@
             <img
               src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
               alt="Equipo de tecnología trabajando"
+              loading="lazy"
               class="img-fluid rounded"
               style="
                 max-height: 400px;
@@ -562,7 +563,7 @@
         scrollToTopBtn.addEventListener("click", function () {
           window.scrollTo({
             top: 0,
-            behavior: "smooth"
+            behavior: "smooth",
           });
         });
 
@@ -628,7 +629,7 @@
                 e.target.classList.remove("is-invalid");
               }
             },
-            true
+            true,
           );
         });
       });
