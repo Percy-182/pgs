@@ -25,6 +25,11 @@
       <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" title="Volver al inicio">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-it sticky-top">
       <div class="container">
@@ -538,6 +543,96 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Validación personalizada para el formulario de contacto IT
+      document.addEventListener("DOMContentLoaded", function () {
+        var form = document.getElementById("contactoForm");
+        var telefono = document.getElementById("telefono");
+        var scrollToTopBtn = document.getElementById("scrollToTop");
+
+        // Scroll to Top functionality
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add("show");
+          } else {
+            scrollToTopBtn.classList.remove("show");
+          }
+        });
+
+        scrollToTopBtn.addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+
+        // Evitar ingreso de letras en el campo teléfono en tiempo real
+        telefono.addEventListener("input", function (e) {
+          var original = telefono.value;
+          // Solo permite números, espacios y símbolos permitidos
+          var filtrado = original.replace(/[^0-9\s\-\+\(\)]/g, "");
+          if (original !== filtrado) {
+            telefono.value = filtrado;
+            telefono.classList.add("is-invalid");
+          } else {
+            // Si el campo está vacío, no mostrar error
+            if (telefono.value.length === 0) {
+              telefono.classList.remove("is-invalid");
+            }
+          }
+        });
+
+        form.addEventListener("submit", function (event) {
+          // Bootstrap validation
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          // Validación extra para email
+          var email = document.getElementById("email");
+          var servicio = document.getElementById("servicio");
+          // Email simple regex
+          var emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value);
+          if (!emailValido) {
+            email.classList.add("is-invalid");
+            event.preventDefault();
+            event.stopPropagation();
+          } else {
+            email.classList.remove("is-invalid");
+          }
+          // Teléfono: al menos 8 dígitos, solo números y símbolos comunes
+          var telValido = /^[0-9\s\-\+\(\)]{8,20}$/.test(telefono.value);
+          if (!telValido) {
+            telefono.classList.add("is-invalid");
+            event.preventDefault();
+            event.stopPropagation();
+          } else {
+            telefono.classList.remove("is-invalid");
+          }
+          // Servicio obligatorio
+          if (!servicio.value) {
+            servicio.classList.add("is-invalid");
+            event.preventDefault();
+            event.stopPropagation();
+          } else {
+            servicio.classList.remove("is-invalid");
+          }
+          form.classList.add("was-validated");
+        });
+        // Quitar error al corregir
+        ["input", "change"].forEach(function (evt) {
+          form.addEventListener(
+            evt,
+            function (e) {
+              if (e.target.classList.contains("is-invalid")) {
+                e.target.classList.remove("is-invalid");
+              }
+            },
+            true
+          );
+        });
+      });
+    </script>
     <script src="./assets/js/script2.js"></script>
     <script src="./assets/js/servicios-lightbox.js"></script>
     <script src="./assets/js/stats-anim.js"></script>

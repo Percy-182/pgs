@@ -26,6 +26,11 @@
       <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" title="Volver al inicio">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container">
@@ -763,6 +768,24 @@
             },
             true
           );
+        });
+      });
+
+      // Scroll to Top functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollToTopBtn = document.getElementById("scrollToTop");
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add("show");
+          } else {
+            scrollToTopBtn.classList.remove("show");
+          }
+        });
+        scrollToTopBtn.addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
         });
       });
 
