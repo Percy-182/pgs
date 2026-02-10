@@ -78,3 +78,113 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", onScroll);
   onScroll();
 });
+
+// Validación simple del formulario de contacto IT
+document.addEventListener("DOMContentLoaded", function () {
+  var form = document.getElementById("contactoForm");
+  if (!form) return;
+
+  var telefono = document.getElementById("telefono");
+  var phoneCountry = document.getElementById("phoneCountry");
+  var scrollToTopBtn = document.getElementById("scrollToTop");
+
+  // Scroll to Top functionality
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+      scrollToTopBtn.classList.add("show");
+    } else {
+      scrollToTopBtn.classList.remove("show");
+    }
+  });
+
+  scrollToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+
+  // Solo filtrar caracteres del teléfono - sin mostrar errores
+  telefono.addEventListener("input", function () {
+    var original = telefono.value;
+    var filtrado = original.replace(/[^0-9+\s\-()\+]/g, "");
+    if (original !== filtrado) {
+      telefono.value = filtrado;
+    }
+  });
+
+  // Auto-prepend código de país al perder foco
+  telefono.addEventListener("blur", function () {
+    var tel = telefono.value.trim();
+    if (tel && !tel.startsWith("+") && phoneCountry.value) {
+      telefono.value = "+" + phoneCountry.value + tel;
+    }
+  });
+
+  // Validar SOLO al enviar
+  form.addEventListener("submit", function (event) {
+    var isValid = true;
+    var email = document.getElementById("email");
+    var servicio = document.getElementById("servicio");
+
+    // Email con TLD
+    if (!email.value.trim()) {
+      email.classList.add("is-invalid");
+      isValid = false;
+    } else if (!/^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/.test(email.value)) {
+      email.classList.add("is-invalid");
+      isValid = false;
+    } else {
+      email.classList.remove("is-invalid");
+    }
+
+    // Teléfono
+    var telRaw = telefono.value.trim();
+    if (!telRaw) {
+      telefono.classList.add("is-invalid");
+      isValid = false;
+    } else {
+      var digitos = telRaw.replace(/\D/g, "");
+      if (digitos.length < 8) {
+        telefono.classList.add("is-invalid");
+        isValid = false;
+      } else {
+        telefono.classList.remove("is-invalid");
+      }
+    }
+
+    // Servicio
+    if (!servicio.value) {
+      servicio.classList.add("is-invalid");
+      isValid = false;
+    } else {
+      servicio.classList.remove("is-invalid");
+    }
+
+    if (!isValid) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    form.classList.add("was-validated");
+  });
+
+  // Limpiar errores al escribir
+  email.addEventListener("input", function () {
+    if (email.classList.contains("is-invalid")) {
+      email.classList.remove("is-invalid");
+    }
+  });
+
+  telefono.addEventListener("input", function () {
+    if (telefono.classList.contains("is-invalid")) {
+      telefono.classList.remove("is-invalid");
+    }
+  });
+
+  servicio.addEventListener("change", function () {
+    if (servicio.classList.contains("is-invalid")) {
+      servicio.classList.remove("is-invalid");
+    }
+  });
+});
