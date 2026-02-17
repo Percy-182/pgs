@@ -137,10 +137,10 @@ const serviciosData = [
   style.textContent = `
     #servicio-lightbox { display: none; position: fixed; z-index: 2000; top: 0; left: 0; width: 100vw; height: 100vh; }
     #servicio-lightbox.active { display: block; }
+    .slb-title { font-size: 1.4rem; color: #025159; margin-bottom: 1.2rem; font-family: 'Montserrat',sans-serif; font-weight: 700; }
     .slb-backdrop { position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(2,81,89,0.55); }
     .slb-modal { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); background: #fff; border-radius: 1.2rem; box-shadow: 0 8px 40px rgba(2,81,89,0.18); max-width: 95vw; width: 420px; max-height: 90vh; overflow-y: auto; padding: 2.2rem 1.5rem 1.5rem; }
     .slb-close { position: absolute; top: 1rem; right: 1.2rem; background: none; border: none; font-size: 2rem; color: #025159; cursor: pointer; }
-    .slb-content h2 { font-size: 1.4rem; color: #025159; margin-bottom: 1.2rem; font-family: 'Montserrat',sans-serif; font-weight: 700; }
     .slb-accordion { margin-bottom: 0; }
     .slb-accordion-item { border-bottom: 1px solid #e3eaf7; }
     .slb-accordion-title { cursor: pointer; padding: 0.7rem 0; font-weight: 600; color: #036873; font-family: 'Montserrat',sans-serif; display: flex; align-items: center; justify-content: space-between; }
@@ -155,13 +155,13 @@ const serviciosData = [
   window.abrirServicioLightbox = function (servicioIdx) {
     const servicio = serviciosData[servicioIdx];
     const content = lightbox.querySelector(".slb-content");
-    let html = `<h2>${servicio.nombre}</h2><div class="slb-accordion">`;
+    let html = `<div class="slb-title" role="heading" aria-level="3">${servicio.nombre}</div><div class="slb-accordion">`;
     servicio.detalles.forEach((detalle, idx) => {
       html += `
         <div class="slb-accordion-item">
-          <div class="slb-accordion-title" data-idx="${idx}">
-            <i class="fa fa-chevron-right"></i> ${detalle.titulo}
-          </div>
+    <div class="slb-accordion-title" data-idx="${idx}" role="heading" aria-level="4">
+      <i class="fa fa-chevron-right"></i> ${detalle.titulo}
+    </div>
           <div class="slb-accordion-content" id="slb-acc-${idx}">
             <div>${detalle.descripcion}</div>
             ${
